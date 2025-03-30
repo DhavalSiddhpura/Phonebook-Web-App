@@ -1,0 +1,19 @@
+<web-app>
+    <servlet>
+        <servlet-name>Phonebook</servlet-name>
+        <servlet-class>Phonebook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Phonebook</servlet-name>
+        <url-pattern>/phonebook</url-pattern>
+    </servlet-mapping>
+<session-config>
+    <cookie-config>
+        <http-only>true</http-only>
+        <secure>false</secure>  <!-- Set true if using HTTPS -->
+    </cookie-config>
+    <session-timeout>30</session-timeout>
+</session-config>
+
+
+</web-app>
